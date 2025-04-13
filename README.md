@@ -274,9 +274,19 @@ CREATE and DELETE Object on S3 Bucket
 
 #### ✅ SNS email alert after uploading/deleting a file — _"Notification Email Sample"_
 
-<img align="center" alt="Object Created" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Created.png" />
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Created.png?raw=true" alt="Object Created" width="400"/>
+      <br/><strong>Object Created</strong>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Removed.png?raw=true" alt="Object Removed" width="400"/>
+      <br/><strong>Object Removed</strong>
+    </td>
+  </tr>
+</table>
 
-<img align="center" alt="Object Removed" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Removed.png" />
 
 
 
