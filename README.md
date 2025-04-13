@@ -7,7 +7,7 @@ This project demonstrates how to configure an **Amazon S3 bucket** for secure fi
 This project is ideal for beginners learning **AWS S3**, **IAM**, and **event-driven architecture**, and is based on a lab from the **AWS re/Start Program**.
 
 <p align="center">
-  <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Architecture.png?raw=true" alt="Architecture" />
+  <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/Architecture.png?raw=true" alt="Architecture" />
 </p>
 
 
@@ -84,7 +84,7 @@ aws s3 ls s3://<your-bucket-name>/images/ --human-readable --summarize
 
 ✅ S3 bucket with uploaded image files — _"S3 Bucket View"_
 
-<img align="center" alt="S3 Bucket files" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/S3%20Bucket%20Initial.png" />
+<img align="center" alt="S3 Bucket files" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/S3%20Bucket%20Initial.png" />
 
 ---
 
@@ -154,16 +154,16 @@ Attach a policy like this:
 
 Sign into (`mediacouser`) account and view the content of S3 Bucket. The user able to upload new file into the S3 bucket:
 
-<img align="center" alt="mediacouser S3 Bucket" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/mediacouserS3.png" />
+<img align="center" alt="mediacouser S3 Bucket" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/mediacouserS3.png" />
 
 
 User do not have permission to rename the object:
 
-<img align="center" alt="Rename denied" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/rename%20denied.png" />
+<img align="center" alt="Rename denied" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/rename%20denied.png" />
 
 User have permission to delete the object:
 
-<img align="center" alt="delete permission" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/delete%20permission.png" />
+<img align="center" alt="delete permission" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/delete%20permission.png" />
 
 
 ---
@@ -257,7 +257,7 @@ aws s3api put-bucket-notification-configuration   --bucket <your-bucket-name>   
 
 Email should be like:
 
-<img align="center" alt="SNS S3 email" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/SNS%20S3%20email.png" />
+<img align="center" alt="SNS S3 email" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/SNS%20S3%20email.png" />
 
 ---
 
@@ -270,18 +270,18 @@ Run 'aws configure' and sign into (`mediacouser`) to test the configuration:
 
 CREATE and DELETE Object on S3 Bucket
 
-<img align="center" alt="mediacouser-createdelete" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/mediacouser-createdelete.png" />
+<img align="center" alt="mediacouser-createdelete" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/mediacouser-createdelete.png" />
 
 #### ✅ SNS email alert after uploading/deleting a file — _"Notification Email Sample"_
 
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Created.png?raw=true" alt="Object Created" width="400"/>
+      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/Object%20Created.png?raw=true" alt="Object Created" width="400"/>
       <br/><strong>Object Created</strong>
     </td>
     <td align="center">
-      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Object%20Removed.png?raw=true" alt="Object Removed" width="400"/>
+      <img src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/Object%20Removed.png?raw=true" alt="Object Removed" width="400"/>
       <br/><strong>Object Removed</strong>
     </td>
   </tr>
@@ -307,7 +307,7 @@ aws s3 rm s3://<your-bucket-name>/images/sample.jpg
 
 ✅ Access denied message — _"Unauthorized Operation Test"_
 
-<img align="center" alt="Access denied" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/Access%20denied.png" />
+<img align="center" alt="Access denied" src="https://github.com/Adib2024/amazon-s3-event-notifications/blob/main/img/Access%20denied.png" />
 
 ---
 
